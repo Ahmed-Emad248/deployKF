@@ -64,7 +64,7 @@ deployKF:
       enabled: true
       clientsUseHttps: true
       matchSNI: true
-      redirect: true
+      redirect: false
     enableProxyProtocol: false
     xffNumTrustedHops: 0
     emailToLowercase: false
