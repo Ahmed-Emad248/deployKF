@@ -51,7 +51,7 @@ deployKF:
 
   gateway:
     name: "deploykf-gateway"
-    httpsRedirectName: "deploykf-gateway-https-redirect"
+    #httpsRedirectName: "deploykf-gateway-https-redirect"
     selectorLabels: {"app":"deploykf-gateway","istio":"deploykf-gateway"}
     hostname: "deploykf.example.com"
     ports:
@@ -62,8 +62,8 @@ deployKF:
       https: ~
     tls:
       enabled: false
-      #clientsUseHttps: true
-      #matchSNI: true
+      clientsUseHttps: false
+      matchSNI: false
       redirect: false
     enableProxyProtocol: false
     xffNumTrustedHops: 0
