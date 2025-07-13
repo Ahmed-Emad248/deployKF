@@ -96,11 +96,11 @@ gateway:
 
   service:
     annotations: {}
-    type: "LoadBalancer"
-    loadBalancerIP: ""
-    loadBalancerSourceRanges: []
-    externalTrafficPolicy: ""
-    externalIPs: []
+    type: "ClusterIP"
+    #loadBalancerIP: ""
+    #loadBalancerSourceRanges: []
+    #externalTrafficPolicy: ""
+    #externalIPs: []
     ports:
       ## NOTE: the status-port is required for many LoadBalancer services (like AWS NLB),
       ##       as they poll the first port of a service to determine if it's ready to receive traffic
