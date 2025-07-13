@@ -61,10 +61,10 @@ deployKF:
       http: ~
       https: ~
     tls:
-      enabled: true
-      clientsUseHttps: true
-      matchSNI: true
-      redirect: true
+      enabled: false
+      #clientsUseHttps: true
+      #matchSNI: true
+      redirect: false
     enableProxyProtocol: false
     xffNumTrustedHops: 0
     emailToLowercase: false
